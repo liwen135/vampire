@@ -1,0 +1,20 @@
+/*DDL 信息*/------------
+
+CREATE TABLE `books` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL,
+  `author` varchar(100) NOT NULL,
+  `price` double(11,2) NOT NULL,
+  `sales` int(11) NOT NULL,
+  `stock` int(11) NOT NULL,
+  `img_path` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8
+
+
+CREATE TABLE `t_user` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(100) DEFAULT NULL,
+  `age` int(11) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
